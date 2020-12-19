@@ -202,8 +202,6 @@ index_with_subtitle: true
 
 exturl: true
 
-google_site_verification: 5AUIVYTbHIAuz-eQtxSfZbWW5eg9_EVZMSQycIuXrG0
-
 
 # ============================================================= #
 # =============== Third Party Services Settings =============== #
@@ -227,18 +225,9 @@ comments:
   lazyload: true
 
 disqus:
-  enable: true
+  enable: false
   shortname: next-theme
   count: true
-
-
-# ============================================================= #
-# ================= Statistics and Analytics ================== #
-# ============================================================= #
-
-google_analytics:
-  tracking_id: UA-108155018-3
-
 
 # ============================================================= #
 # ====================== Search Services ====================== #
@@ -285,4 +274,6 @@ motion:
   async: true
 
 vendors:
-  internal: jsdelivr
+  internal: local
+  plugins: local
+
