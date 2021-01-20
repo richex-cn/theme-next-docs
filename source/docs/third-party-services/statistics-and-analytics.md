@@ -36,7 +36,7 @@ Copy the script ID after `hm.js?`, like the following picture:
 <!-- endtab -->
 
 <!-- tab NexT Config -->
-Edit {% label primary@theme config file %} and change section `baidu_analytics` to your script ID.
+Edit {% label primary@theme config file %} and change the value of `baidu_analytics` to your script ID.
 ```yml next/_config.yml
 # Baidu Analytics ID
 baidu_analytics: your_id
@@ -46,20 +46,21 @@ baidu_analytics: your_id
 
 #### Growingio Analytics
 
-Official documentation: https://docs.growingio.com/sdk-integration/sdk-2.x-docs/
+Official documentation: https://docs.growingio.com/v3/developer-manual/sdkintegrated/web-js-sdk/latest-jssdk
 
-#### CNZZ Analytics (China)
+Edit {% label primary@theme config file %} and change the value of `growingio_analytics` to your project ID.
+```yml next/_config.yml
+# Growingio Analytics
+growingio_analytics: # <project_id>
+```
 
-1. Create an account and log into [CNZZ Analytics](https://www.umeng.com/). [More detailed documentation](https://developer.umeng.com/docs/67963/detail/68609)
-2. Set the value of section `cnzz_siteid` in {% label primary@theme config file %} to your CNZZ site ID. You can find this ID in link or the auto-generated script.
-    ```yml next/_config.yml
-    # CNZZ count
-    #cnzz_siteid:
-    ```
+#### Cloudflare Web Analytics
 
-{% note info %}
-The script will show «Webmaster Statistics» and it's not elegant, so we used a `display: none;` to hide it.
-{% endnote %}
+Edit {% label primary@theme config file %} and change the value of `cloudflare_analytics` to your project ID.
+```yml next/_config.yml
+# Cloudflare Web Analytics
+cloudflare_analytics:
+```
 
 ### Counting Tools
 
