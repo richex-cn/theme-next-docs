@@ -144,7 +144,7 @@ Gitalk is a modern comment component based on Github Issue and Preact.
     ```
 
 {% note warning %}
-Hexo has encode URLs by default since version 4.0: [PR 3708](https://github.com/hexojs/hexo/pull/3708).
+Hexo has encode URLs by default since version 4.0: [Pull Request #3708](https://github.com/hexojs/hexo/pull/3708).
 Gitalk relies on the md5 value of the page path for tagging, and this may cause issues. It's recommended to upgrade Hexo to 4.0 (or later), NexT to 7.7.0 (or later) to use Gitalk.
 {% endnote %}
 
@@ -168,8 +168,11 @@ utterances:
 
 Isso – *Ich schrei sonst* – is a lightweight commenting server written in Python and JavaScript. It aims to be a drop-in replacement for Disqus.
 
-```yml next/_config.yml
-# Isso
-# For more information: https://posativ.org/isso/
-isso: # <data_isso>
-```
+1. You need to [install and configure Isso](https://posativ.org/isso/docs/install/) on your server first.
+2. Set the value `isso` in the {% label primary@theme config file %} as the value `data-isso` in Isso script. An exemplary script tag is given in the `Integration` section of the [Isso quickstart document](https://posativ.org/isso/docs/quickstart/#integration), you need to modify it according to the URL of your server.
+
+    ```yml next/_config.yml
+    # Isso
+    # For more information: https://posativ.org/isso/
+    isso: # <data_isso>
+    ```
