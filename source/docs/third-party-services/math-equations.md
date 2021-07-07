@@ -27,11 +27,13 @@ math:
 
 The `every_page` option controls whether to render Math Equations every page.
 
-* **`false`** → Equations will be processed on demand. It will only render those posts which have `mathjax: true` in their front-matter.
-* `true` → Equations will be processed on every page. Even if they not exists on one or another page.
+- **`false`** → Equations will be processed on demand. It will only render those posts which have `mathjax: true` in their front-matter.
+- `true` → Equations will be processed on every page. Even if they not exists on one or another page.
 
 {% note default **Examples with `every_page: false` option** %}
+
 - This post will render the Math Equations
+
     ```md
     ---
     title: Will Render Math
@@ -40,6 +42,7 @@ The `every_page` option controls whether to render Math Equations every page.
     ```
 
 - This post will NOT render the Math Equations
+
     ```md
     ---
     title: Not Render Math
@@ -48,11 +51,13 @@ The `every_page` option controls whether to render Math Equations every page.
     ```
 
 - This post will NOT render the Math Equations either
+
     ```md
     ---
     title: Not Render Math Either
     ---
     ```
+
 {% endnote %}
 
 The `mathjax` and `katex` options are used to set the rendering engine. Please read the detailed document below.
@@ -72,12 +77,13 @@ Firstly, you need to choose a rendering engine and turn on `enable` for it in {%
 
 If you use MathJax to render Math Equations, you can choose one of the Markdown renderers below:
 
-* [hexo-renderer-pandoc](https://github.com/wzpan/hexo-renderer-pandoc)
+- [hexo-renderer-pandoc](https://github.com/wzpan/hexo-renderer-pandoc)
 
 hexo-renderer-pandoc is recommended because it can handle mathematical formulas in markdown documents perfectly.
 
 {% note warning %}
 If you are using other renderers, such as [hexo-renderer-marked](https://github.com/hexojs/hexo-renderer-marked), you need to be aware of the conflict between LaTeX and Markdown syntax. For example, an underscore (`_`) may be interpreted as the start of italic text in Markdown, or subscripted mark in TeX. To avoid syntax errors, please use escape characters (`\_`) instead:
+
 ```diff
 -$\epsilon_0$
 +$\epsilon\_0$
@@ -86,6 +92,7 @@ If you are using other renderers, such as [hexo-renderer-marked](https://github.
 -\\
 +\\\\
 ```
+
 {% endnote %}
 
 **Installation**
@@ -110,7 +117,7 @@ If you are using other renderers, such as [hexo-renderer-marked](https://github.
 
 **Plugins**
 
-All extensions of MathJax are loaded automatically. For example, `mhchem` is a tool for writing beautiful chemical equations easily. It implements the `\ce` and `\pu` chemical equation macros of the LaTeX mhchem package. More infomation: [MathJax/mhchem Manual](https://mhchem.github.io/MathJax-mhchem/).
+All extensions of MathJax are loaded automatically. For example, `mhchem` is a tool for writing beautiful chemical equations easily. It implements the `\ce` and `\pu` chemical equation macros of the LaTeX mhchem package. More information: [MathJax/mhchem Manual](https://mhchem.github.io/MathJax-mhchem/).
 <!-- endtab -->
 
 <!-- tab KaTeX -->
@@ -118,8 +125,8 @@ All extensions of MathJax are loaded automatically. For example, `mhchem` is a t
 
 If you use KaTeX to render Math Equations, you can choose one of the Markdown renderers below:
 
-* [hexo-renderer-markdown-it-plus](https://github.com/CHENXCHEN/hexo-renderer-markdown-it-plus)
-* [hexo-renderer-markdown-it](https://github.com/hexojs/hexo-renderer-markdown-it)
+- [hexo-renderer-markdown-it-plus](https://github.com/CHENXCHEN/hexo-renderer-markdown-it-plus)
+- [hexo-renderer-markdown-it](https://github.com/hexojs/hexo-renderer-markdown-it)
 
 **Installation**
 
@@ -176,7 +183,7 @@ markdown:
 
 **Plugins**
 
-Copy-tex extension for KaTeX modifes the copy/paste behavior in any browser supporting the Clipboard API so that, when selecting and copying whole KaTeX-rendered elements, the text content of the resulting clipboard renders KaTeX elements as their LaTeX source surrounded by specified delimiters. More infomation: [Copy-tex extension](https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex).
+Copy-tex extension for KaTeX modifes the copy/paste behavior in any browser supporting the Clipboard API so that, when selecting and copying whole KaTeX-rendered elements, the text content of the resulting clipboard renders KaTeX elements as their LaTeX source surrounded by specified delimiters. More information: [Copy-tex extension](https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex).
 
 ```yml next/_config.yml
 math:
@@ -208,6 +215,7 @@ After setting up the math rendering engine or installing / uninstalling the Mark
 $ hexo clean && hexo g -d
 # or hexo clean && hexo s
 ```
+
 {% endnote %}
 
 {% note warning %}
