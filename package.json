@@ -1,6 +1,6 @@
 {
   "name": "theme-next-docs",
-  "version": "8.8.1",
+  "version": "8.9.0",
   "private": true,
   "hexo": {
     "version": "5.4.0"
@@ -27,7 +27,7 @@
   "homepage": "https://theme-next.js.org",
   "dependencies": {
     "@next-theme/plugins": "^8.6.1",
-    "hexo": "5.4.0",
+    "hexo": "6.0.0",
     "hexo-generator-archive": "1.0.0",
     "hexo-generator-feed": "3.0.0",
     "hexo-generator-index": "2.0.0",
@@ -35,9 +35,9 @@
     "hexo-renderer-marked": "4.1.0",
     "hexo-renderer-stylus": "2.0.1",
     "hexo-server": "2.0.0",
-    "hexo-theme-next": "8.8.1"
+    "hexo-theme-next": "8.9.0"
   },
   "devDependencies": {
-    "markdownlint-cli": "0.29.0"
+    "markdownlint-cli": "0.30.0"
   }
 }
