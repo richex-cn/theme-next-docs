@@ -1,2 +1,6 @@
 User-agent: *
 Disallow: /
+
+# https://developers.google.com/search/docs/advanced/crawling/block-indexing
+User-agent: Googlebot
+Allow: /
